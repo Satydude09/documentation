@@ -1,0 +1,131 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  width:100%;
+  height: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(240,240,240);
+}
+.document{
+  display:flex;
+  margin:0;
+  padding:0;
+}
+#main-doc{
+  width: 75%;
+  height: 100%;
+  margin-left: 25%;
+  text-align: left;
+
+}
+#navbar{
+  width:25%;
+  height: 100vh;
+  position:fixed;
+  top:0;
+  left: 0;
+  overflow-y: auto;
+  background-color: rgb(240,240,240);
+  border-right: 2px solid rgb(220,220,220);
+}
+#navbar a{
+  display:block;
+  width:100%;
+  height: 60px;
+  margin:0 auto;
+  padding:20px 20px;
+  text-decoration: none;
+  color:rgb(0,0,0);
+  border-top: 1px solid rgb(0,0,0);
+
+}
+#navbar header{
+  position: sticky;
+  top:0;
+  font-size: 2em;
+  font-weight: bolder;
+  width:100%;
+  height: 90px;
+  margin: 0 auto ;
+  padding-top: 20px;
+  background-color: rgb(240,240,240);
+
+}
+.main-section{
+  width:100%;
+  padding: 30px 50px;
+  font-size: 1.5em;
+  font-weight:bold;
+
+
+}
+.main-section p,ul,code,.mdn{
+  font-size: .75em;
+  font-weight: normal;
+
+}
+.main-section li{
+  margin: 15px auto;
+}
+.main-section code{
+  margin-left: 20px;
+  background-color: rgb(220,220,220);
+  display: block;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 25% 0 5%;
+}
+.li-itms{
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+@media screen and (max-width:900px){
+  .document{
+    display:flex;
+    flex-direction: column;
+
+  }
+  #navbar{
+    width:100%;
+    height: 200px;
+    margin: 0 auto;
+    position:absolute;
+    overflow-y: auto;
+    background-color: rgb(240,240,240);
+    border: 2px solid rgb(200,200,200);
+  }
+  #main-doc{
+    width: 100%;
+    height: 100%;
+    margin: 200px auto 0 auto;
+    background-color: rgb(240,240,240);
+  }
+  #navbar a{
+    text-align: left;
+    display:block;
+    width:100%;
+    height: 40px;
+    margin:0 auto;
+    padding:10px 20px;
+    text-decoration: none;
+    color:rgb(0,0,0);
+    border-top: 1px solid rgb(0,0,0);
+
+  }
+  #navbar header{
+    position: sticky;
+    top:0;
+    font-size: 1.5em;
+    font-weight: bolder;
+    width:100%;
+    height: 50px;
+    padding-top: 10px;
+    margin: 0 auto 0 auto;
+    background-color: rgb(240,240,240);
+
+  }
+}
